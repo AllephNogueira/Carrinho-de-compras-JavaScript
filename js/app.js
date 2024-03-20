@@ -37,6 +37,11 @@ function produtosNoCarrinho(quantidade, nomeProduto, valorUnitario){
     let precoFinal = document.getElementById('valor-total')
     precoFinal.textContent = (ProdutoTotal) // Valor total dos produtos.
 
+
+    // Zerando o botao quantidade apos o usuario adicionar a quantidade que ele quer.
+
+    document.getElementById('quantidade').value = 0;
+
 }
 
 
