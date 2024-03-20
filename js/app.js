@@ -1,5 +1,11 @@
 carrinhoLimpo();
 let ProdutoTotal = 0;
+adicionarProdutosNaLista();
+
+function adicionarProdutosNaLista(){
+    let novosProdutos = document.getElementById('produto');
+    novosProdutos.innerHTML += `<option value="Xbox One - R$5000">Xbox One - R$5000,00</option>`;
+}
 
 function adicionar(){
     // Recuperar produtos
@@ -15,8 +21,6 @@ function adicionar(){
     produtosNoCarrinho(quantidade, nomeProduto, valorUnitario)
       
 }
-
-
 
 function produtosNoCarrinho(quantidade, nomeProduto, valorUnitario){
 
@@ -43,8 +47,6 @@ function produtosNoCarrinho(quantidade, nomeProduto, valorUnitario){
     document.getElementById('quantidade').value = 0;
 
 }
-
-
 
 // Funçoes para remover os itens do carrinho.
 function carrinhoLimpo(){
